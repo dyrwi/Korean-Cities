@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="25">
+        <ImageView
+            android:id="@+id/city_list_frag_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/city_list_frag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/city_list_frag_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="What I have now is a ListView of TextView elements. each TextView element displays a text the text length varies from 12 words to 100+). What I want is to make these TextViews display a portion of the text (let's say 20 word or roughly 170 chars)."
+            android:layout_gravity="top" />
+    </LinearLayout>
+</LinearLayout>
